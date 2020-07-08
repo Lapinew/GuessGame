@@ -1,0 +1,79 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JeuDevine
+</name>
+</assembly>
+<members>
+<member name="T:JeuDevine.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:JeuDevine.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:JeuDevine.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.msgBox_resultat">
+ <summary>
+ Procédure permettant d'afficher la message box donnant le résumé des parties jouées (nombre victoires/defaites)
+ Appelée dans tout les cas ou l'application ferme
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.motCorrect">
+ <summary>
+ Procédure gérant la victoire. Affiche une boite de dialogue annoncant la victoire et invitant l'utilisateur à recommencer.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.motIncorrect">
+ <summary>
+ Procédure gérant la défaite. Affiche une boite de dialogue affichant le mot qui était à deviner et invitant l'utilisateur à recommencer.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.melanger(System.String)">
+ <summary>
+ Fonction qui renvoie une chaine de caractere resultant du mélange aléatoire des lettres de la chaine de caractère passée en parametre (mot du tableau).
+ </summary>
+ <param name="chaine">chaine de caractère à mélanger</param>
+ <returns>chaine de caractère mélangée</returns>
+</member>
+<member name="M:JeuDevine.FormPrincipale.nouvellePartie">
+ <summary>
+ Fonction permettant essentiellement de mettre à jour et reinitialiser les variables nécéssaires au passage d'une partie à la suivante.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.initialisation">
+ <summary>
+ Procédure réalisant les initialisations nécéssaires au démarrage du jeu (tableau de mot) et appelant la procédure permettant de lancer une nouvelle partie.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.BtnQuitter_Click(System.Object,System.EventArgs)">
+ <summary>
+ Demande à l'utilisateur s'il veut réellement quitter le jeu quand il clique sur le bouton quitter. S'il repond oui, le jeu lui résume son nombre de victoires et defaites avant de fermer.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.BtnRestart_Click(System.Object,System.EventArgs)">
+ <summary>
+ Demande à l'utilisateur s'il veut annuler la manche en cours et en recommencer une. S'il repond oui, la fonction nouvellePartie est appelée.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.BtnTester_Click(System.Object,System.EventArgs)">
+ <summary>
+ Procédure permettant à l'utilisateur de soumettre sa proposition.
+ </summary>
+</member>
+<member name="M:JeuDevine.FormPrincipale.txtSaisie_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Procédure empechant l'utilisateur de tester sa proposition si cette derniere est nulle (désactive le bouton tester).
+ </summary>
+</member>
+</members>
+</doc>
